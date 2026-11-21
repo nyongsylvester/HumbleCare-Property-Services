@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Contact Humble Care Cleaning Service in Portsmouth about Airbnb cleaning, property setup and eco-conscious property care."
+    >
+    <title>Contact | Humble Care Cleaning Service</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" aria-label="Humble Care Cleaning Service home">
+        Humble Care Cleaning Service
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact-hero">
+        <p>Contact · Portsmouth, UK</p>
+        <h1>Let’s prepare your property for its next stay.</h1>
+        <p>
+          Tell us whether you’re looking for premium Airbnb cleaning,
+          property setup or eco-conscious property care.
+        </p>
+      </section>
+
+      <section class="contact-enquiry" aria-labelledby="enquiry-title">
+        <h2 id="enquiry-title">Start an enquiry</h2>
+        <p>
+          Fill in what you can. We’ll open a WhatsApp message for you to review
+          and send.
+        </p>
+
+        <form id="whatsapp-enquiry">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+
+          <label for="service">What do you need help with?</label>
+          <select id="service" name="service" required>
+            <option value="" selected disabled>Select a service</option>
+            <option>Premium Airbnb cleaning</option>
+            <option>Property setup</option>
+            <option>Eco-conscious property care</option>
+          </select>
+
+          <label for="area">Property area in Portsmouth (optional)</label>
+          <input id="area" name="area" type="text">
+
+          <label for="date">Preferred date (optional)</label>
+          <input id="date" name="date" type="date">
+
+          <label for="message">A little about what you need</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Continue to WhatsApp</button>
+        </form>
+
+        <p>
+          Your details are not stored on this website. WhatsApp opens with a
+          draft message; it is sent only if you choose to send it there.
+        </p>
+      </section>
+
+      <section class="contact-social" aria-labelledby="social-title">
+        <h2 id="social-title">Connect with Humble Care</h2>
+        <p>You can also find us on social media or message us directly.</p>
+
+        <p>
+          <a href="https://www.instagram.com/humblecare/"
+             target="_blank" rel="noopener noreferrer">Instagram</a>
+        </p>
+        <p>
+          <a href="https://www.facebook.com/share/1FtDoVKD2Z/?mibextid=wwXlfr"
+             target="_blank" rel="noopener noreferrer">Facebook</a>
+        </p>
+        <p>
+          <a href="https://wa.me/447940522017"
+             target="_blank" rel="noopener noreferrer">
+            WhatsApp · +44 7940 522017
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Humble Care Cleaning Service · Portsmouth, UK</p>
+    </footer>
+
+    <script>
+      const form = document.getElementById("whatsapp-enquiry");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const data = new FormData(form);
+        const name = String(data.get("name") || "").trim();
+        const service = String(data.get("service") || "").trim();
+        const area = String(data.get("area") || "").trim();
+        const date = String(data.get("date") || "").trim();
+        const message = String(data.get("message") || "").trim();
+
+        const lines = [
+          "Hello Humble Care Cleaning Service, I’d like to make an enquiry.",
+          `Name: ${name}`,
+          `Service: ${service}`
+        ];
+
+        if (area) lines.push(`Property area: ${area}`);
+        if (date) lines.push(`Preferred date: ${date}`);
+        if (message) lines.push(`Message: ${message}`);
+
+        const whatsappUrl =
+          "https://wa.me/447940522017?text=" +
+          encodeURIComponent(lines.join("\n"));
+
+        window.location.assign(whatsappUrl);
+      });
+    </script>
+  </body>
+</html>
