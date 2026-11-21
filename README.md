@@ -1,30 +1,41 @@
-# theFoundryHub
-A growing business-services brand exploring marketing structure, design, websites, and customer experiences.
+# Humble Care Cleaning Service
 
-## Website project
-This repository will hold theFoundryHub website as it develops. The first version is planned as a one-page site introducing the brand and its services.
+A simple website project for Humble Care Cleaning Service in Portsmouth, UK.
 
-## Project status
-In progress. This project is also part of my hands-on learning in frontend development, Git, and Cloud/DevOps.
+The business offers premium Airbnb cleaning to help hosts prepare guest-ready spaces, property setup, and eco-conscious property care.
 
-## Current focus
-- Plan the site’s content and structure
-- Build an accessible, responsive one-page website
-- Track changes with Git and GitHub
-- Learn deployment and automation after the website works locally
+## What is in the site now
 
-## Accuracy note
-This is a developing brand and learning project. Client work, results, and testimonials will only be added when they are real and authorized.
-## Deployment
+- A single-page home site in `index.html`.
+- A linked stylesheet in `style.css`.
+- Sections for the introduction, services, approach, customer feedback and contact.
+- Navigation links that move to sections on the home page.
 
-This static website is published with GitHub Pages from the `main` branch and the repository root. Changes pushed to the publishing source trigger an automated deployment.
+The feedback and contact sections are placeholders. Verified enquiry details, Instagram and Facebook links, and genuine approved testimonials have not yet been added. No contact details or customer reviews should be guessed.
 
-Live site: https://nyongsylvester.github.io/theFoundryHub-service-site-demo/
-## Automated validation
+## Previewing the site
 
-A GitHub Actions workflow checks that `index.html` and `style.css` exist, that the HTML links the stylesheet and includes the contact button, and that the button has a matching CSS rule. It runs on pushes to `main` and on pull requests targeting `main`.
-## Automated validation
+1. Download a fresh ZIP from the current GitHub repository after your latest commits.
+2. Extract the ZIP before opening the site.
+3. Keep `index.html` and `style.css` together in the same folder.
+4. Open the extracted `index.html` in a browser.
 
-GitHub Actions checks that `index.html` and `style.css` exist, that the HTML links the stylesheet and includes the contact button, and that a matching CSS rule exists. The workflow runs on pushes to `main` and on pull requests targeting `main`.
+The website is not hosted by GitHub Pages unless that is configured separately. Opening a repository file on GitHub shows its source code, not the running website.
+
+## Project files
+
+- `index.html` — the current single-page website.
+- `style.css` — the website’s visual styling.
+- `README.md` — this project guide.
+
+If `.github/workflows/validate-site.yml` is present, it is an automated repository check—not a webpage. Leave it in place for now; we can inspect what it checks before changing it.
+
+## Next improvements
+
+- Review the current HTML and confirm the stylesheet is loading.
+- Add separate, linked Services and Contact pages if needed.
+- Add suitable images with accurate descriptions and any necessary credits.
+- Add verified contact and social links when supplied.
+- Add genuine testimonials only when approved feedback is available.
 
 
