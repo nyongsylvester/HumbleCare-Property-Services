@@ -476,3 +476,13 @@ footer p {
     scroll-behavior: auto;
   }
 }
+.contact-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-social-links a {
+  margin: 0;
+}
