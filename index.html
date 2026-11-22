@@ -81,7 +81,46 @@
       </section>
      <section id="testimonials">
         <h2>Customer feedback</h2>
-        <p>
+         <script>
+      const heroSlides = [
+        {
+          src: "images/studio-interior.webp",
+          alt: "Bright studio interior with a bed, kitchenette and wooden flooring"
+        },
+        {
+          src: "images/made-bedroom.webp",
+          alt: "Bedroom arranged with warm yellow accents and bedding"
+        },
+        {
+          src: "images/bathroom-interior.webp",
+          alt: "Bright bathroom with a glass shower and tiled walls"
+        },
+        {
+          src: "images/unmade-bedroom.webp",
+          alt: "Bedroom with unmade white bedding and a dark feature wall"
+        }
+      ];
+
+      const heroImage = document.querySelector("#home .hero-image");
+      const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      );
+      let currentSlide = 0;
+
+      if (heroImage && !prefersReducedMotion.matches) {
+        window.setInterval(() => {
+          currentSlide = (currentSlide + 1) % heroSlides.length;
+          heroImage.classList.add("is-fading");
+
+          window.setTimeout(() => {
+            heroImage.src = heroSlides[currentSlide].src;
+            heroImage.alt = heroSlides[currentSlide].alt;
+            heroImage.classList.remove("is-fading");
+          }, 300);
+        }, 6500);
+      }
+    </script>   
+       <p>
           Genuine testimonials will be added when customer feedback is
           available and approved.
         </p>
@@ -91,5 +130,6 @@
     <footer>
       <p>&copy; 2026 Humble Care Cleaning Service · United Kingdom</p>
     </footer>
+    
   </body>
 </html>
