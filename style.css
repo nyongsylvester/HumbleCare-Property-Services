@@ -486,3 +486,16 @@ footer p {
 .contact-social-links a {
   margin: 0;
 }
+#home .hero-image {
+  transition: opacity 300ms ease;
+}
+
+#home .hero-image.is-fading {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #home .hero-image {
+    transition: none;
+  }
+}
