@@ -1,6 +1,6 @@
-# Humble Care Cleaning Service
+# Humble Care Property Services
 
-A simple website project for Humble Care Cleaning Service in Portsmouth, UK.
+A simple website project for Humble Care Property Services in Portsmouth, UK.
 
 The business offers premium Airbnb cleaning to help hosts prepare guest-ready spaces, property setup, and eco-conscious property care.
 
