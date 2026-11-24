@@ -558,3 +558,21 @@ footer p {
     grid-template-columns: 1fr;
   }
 }
+.offers-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--hc-brass);
+  background: var(--hc-brass);
+  color: var(--hc-forest-deep);
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.offers-button:hover {
+  border-color: var(--hc-forest);
+  background: var(--hc-forest);
+  color: var(--hc-paper);
+}
