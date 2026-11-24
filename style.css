@@ -1,9 +1,9 @@
 :root {
-  --hc-forest: #193b33;
-  --hc-forest-deep: #102c26;
+  --hc-forest: #17324d;
+  --hc-forest-deep: #102438;
   --hc-paper: #fbf9f4;
   --hc-cream: #f1ebdf;
-  --hc-brass: #ad9160;
+  --hc-brass: #b08d45;
   --hc-ink: #2c332f;
   --hc-muted: #6c716c;
   --hc-line: #ddd5c7;
@@ -215,7 +215,9 @@ main > section:first-child > p:not(:first-child) {
 
 #approach,
 #testimonials {
-  background: var(--hc-cream);
+  background:
+    linear-gradient(135deg, rgba(23, 50, 77, 0.08), transparent 55%),
+    #f1ebdf;
 }
 
 #approach p,
@@ -305,7 +307,9 @@ main > section:first-child > p:not(:first-child) {
 }
 
 .contact-social {
-  background: var(--hc-cream);
+  background:
+    linear-gradient(135deg, rgba(176, 141, 69, 0.12), transparent 60%),
+    #f1ebdf;
 }
 
 .contact-social a {
