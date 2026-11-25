@@ -8,6 +8,7 @@ The business helps prepare and care for properties, including Airbnb setup using
 
 - `index.html` — Home page with the property-services introduction and image slideshow.
 - `services.html` — Expandable service details and before-and-after work gallery.
+- `about.html` — Company introduction with mission and vision sections.
 - `contact.html` — Enquiry form that prepares a message to review and send through WhatsApp, plus Instagram, Facebook, and WhatsApp links.
 - `style.css` — Shared responsive styling.
 - `images/` — Home slideshow and before-and-after images.
