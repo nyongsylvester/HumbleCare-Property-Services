@@ -1,41 +1,27 @@
 # HumbleCare Property Services Ltd
 
-A simple website project for HumbleCare Property Services Ltd in Bournemouth.
+Website for HumbleCare Property Services Ltd in Bournemouth.
 
-The business offers premium Airbnb cleaning to help hosts prepare guest-ready spaces, property setup, and eco-conscious property care.
+The business helps prepare and care for properties, including Airbnb setup using furnishings and items provided by the property owner, guest-ready changeovers, domestic and specialist cleaning, small commercial cleaning, and property-management support.
 
-## What is in the site now
+## Pages
 
-- A single-page home site in `index.html`.
-- A linked stylesheet in `style.css`.
-- Sections for the introduction, services, approach, customer feedback and contact.
-- Navigation links that move to sections on the home page.
+- `index.html` — Home page with the property-services introduction and image slideshow.
+- `services.html` — Expandable service details and before-and-after work gallery.
+- `contact.html` — Enquiry form that prepares a message to review and send through WhatsApp, plus Instagram, Facebook, and WhatsApp links.
+- `style.css` — Shared responsive styling.
+- `images/` — Home slideshow and before-and-after images.
 
-The feedback and contact sections are placeholders. Verified enquiry details, Instagram and Facebook links, and genuine approved testimonials have not yet been added. No contact details or customer reviews should be guessed.
+## Previewing
 
-## Previewing the site
+Download a fresh ZIP from this repository and extract it before opening `index.html` in a browser. Keep the HTML files, `style.css`, and the `images` folder together in their original structure.
 
-1. Download a fresh ZIP from the current GitHub repository after your latest commits.
-2. Extract the ZIP before opening the site.
-3. Keep `index.html` and `style.css` together in the same folder.
-4. Open the extracted `index.html` in a browser.
+Opening a file on GitHub shows its source code, not the running website. GitHub Pages hosting is separate and must be configured before the site has a public live URL.
 
-The website is not hosted by GitHub Pages unless that is configured separately. Opening a repository file on GitHub shows its source code, not the running website.
+## Contact form privacy
 
-## Project files
+The enquiry form does not store submissions on this website. It prepares a WhatsApp message for the visitor to review; the message is sent only if the visitor chooses to send it.
 
-- `index.html` — the current single-page website.
-- `style.css` — the website’s visual styling.
-- `README.md` — this project guide.
+## Project notes
 
-If `.github/workflows/validate-site.yml` is present, it is an automated repository check—not a webpage. Leave it in place for now; we can inspect what it checks before changing it.
-
-## Next improvements
-
-- Review the current HTML and confirm the stylesheet is loading.
-- Add separate, linked Services and Contact pages if needed.
-- Add suitable images with accurate descriptions and any necessary credits.
-- Add verified contact and social links when supplied.
-- Add genuine testimonials only when approved feedback is available.
-
-
+Service descriptions and business details should be confirmed by the owner. Only use genuine, approved customer testimonials and work images.
