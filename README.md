@@ -1,6 +1,6 @@
-# Humble Care Property Services
+# HumbleCare Property Services Ltd
 
-A simple website project for Humble Care Property Services in Portsmouth, UK.
+A simple website project for HumbleCare Property Services Ltd in Bournemouth.
 
 The business offers premium Airbnb cleaning to help hosts prepare guest-ready spaces, property setup, and eco-conscious property care.
 
