@@ -682,3 +682,41 @@ footer p {
 .offer-item[open] summary::after {
   content: "Read less";
 }
+/* Contact details: telephone first, social links underneath */
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+}
+
+.contact-social .contact-method {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--hc-forest);
+  text-decoration: none;
+}
+
+.contact-social .contact-method img {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.contact-social .contact-method:hover {
+  color: var(--hc-brass);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
