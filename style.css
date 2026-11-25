@@ -630,3 +630,9 @@ footer p {
   margin-top: 0.7rem;
   font-size: 0.95rem;
 }
+/* Smaller heading on the Contact page */
+.contact-hero h1 {
+  max-width: 620px;
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  line-height: 1.15;
+}
