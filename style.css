@@ -773,3 +773,48 @@ footer p {
     max-height: 360px;
   }
 }
+/* Google Reviews section on the Home page */
+#testimonials {
+  background: var(--hc-forest);
+  color: var(--hc-paper);
+  text-align: center;
+}
+
+#testimonials h2 {
+  color: var(--hc-paper);
+}
+
+.google-reviews-eyebrow {
+  margin: 0 0 0.75rem;
+  color: var(--hc-brass);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+#testimonials > p:not(.google-reviews-eyebrow) {
+  max-width: 620px;
+  margin: 0 auto 1.5rem;
+  color: var(--hc-paper);
+}
+
+#testimonials .google-review-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--hc-brass);
+  background: var(--hc-brass);
+  color: var(--hc-forest-deep);
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease,
+    border-color 160ms ease;
+}
+
+#testimonials .google-review-link:hover {
+  border-color: var(--hc-paper);
+  background: var(--hc-paper);
+  color: var(--hc-forest-deep);
+}
