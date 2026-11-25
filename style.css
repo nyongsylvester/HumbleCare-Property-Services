@@ -576,3 +576,21 @@ footer p {
   background: var(--hc-forest);
   color: var(--hc-paper);
 }
+.offer-item {
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--hc-line);
+  border-top: 2px solid var(--hc-brass);
+  background: #fffefa;
+}
+
+.offer-item summary {
+  color: var(--hc-forest);
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.25rem;
+}
+
+.offer-item p {
+  margin-bottom: 0;
+  color: var(--hc-muted);
+}
